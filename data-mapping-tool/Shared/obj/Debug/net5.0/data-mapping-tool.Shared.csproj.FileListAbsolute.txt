@@ -1,0 +1,12 @@
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/bin/Debug/net5.0/data-mapping-tool.Shared.deps.json
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/bin/Debug/net5.0/data-mapping-tool.Shared.dll
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/bin/Debug/net5.0/ref/data-mapping-tool.Shared.dll
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/bin/Debug/net5.0/data-mapping-tool.Shared.pdb
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/obj/Debug/net5.0/data-mapping-tool.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/obj/Debug/net5.0/data-mapping-tool.Shared.AssemblyInfoInputs.cache
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/obj/Debug/net5.0/data-mapping-tool.Shared.AssemblyInfo.cs
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/obj/Debug/net5.0/data-mapping-tool.Shared.csproj.CoreCompileInputs.cache
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/obj/Debug/net5.0/data-mapping-tool.Shared.dll
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/obj/Debug/net5.0/ref/data-mapping-tool.Shared.dll
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/obj/Debug/net5.0/data-mapping-tool.Shared.pdb
+/Users/action/Projects/data-mapping-tool/data-mapping-tool/Shared/obj/Debug/net5.0/data-mapping-tool.Shared.csproj.AssemblyReference.cache

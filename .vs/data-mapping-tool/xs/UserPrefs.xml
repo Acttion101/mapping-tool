@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{BDE9CC99-C411-4C60-B567-DB78458E6E9E}|Default">
+  <MonoDevelop.Ide.ItemProperties.data-mapping-tool.Client PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.data-mapping-tool.Server PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="data-mapping-tool/Client/Pages/Index.html">
+    <Files>
+      <File FileName="data-mapping-tool/Server/Controllers/MappingController.cs" Line="10" Column="1" />
+      <File FileName="data-mapping-tool/Client/Pages/index.html" Line="133" Column="74" />
+      <File FileName="data-mapping-tool/Server/Startup.cs" />
+      <File FileName="data-mapping-tool/Server/Properties/launchSettings.json" />
+      <File FileName="data-mapping-tool/Server/Controllers/WeatherForecastController.cs" />
+      <File FileName="data-mapping-tool/Server/Models/MappingModel.cs" />
+      <File FileName="data-mapping-tool/Shared/WeatherForecast.cs" />
+      <File FileName="data-mapping-tool/Client/Pages/Index.razor" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="data-mapping-tool" expanded="True">
+            <Node name="data-mapping-tool.Client" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Index.html" selected="True" />
+              </Node>
+            </Node>
+            <Node name="data-mapping-tool.Server" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="data-mapping-tool.Shared" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

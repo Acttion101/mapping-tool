@@ -1,0 +1,55 @@
+﻿@page "/"
+@using System.IO
+
+@inject HttpClient httpClient
+@{
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="Pages/Styles/index.css" rel="stylesheet" />
+}
+<style>
+    .textbox {
+        border-radius: 2px;
+        height: 20rem;
+        width: 40rem;
+    }
+
+    .textbox1 {
+        border-radius: 2px;
+        height: 29rem;
+        width: 100rem;
+    }
+
+    .btn-mapping {
+        margin-left: 100rem;
+        font-size: 20px;
+    }
+</style>
+
+
+<table class="w3-table-all w3-tiny">
+    <tr>
+        <th>Input</th>
+        <th>Output</th>
+        @*<th>Desciption</th>*@
+    </tr>
+    <tr>
+        <td><textarea class="textbox" Multiline=true Placeholder="Enter your Code"></textarea> </td>
+        <td><textarea class="textbox" Multiline=true Placeholder="Enter your Code"></textarea> </td>
+
+    </tr>
+</table>
+<button class="btn-mapping" onclick="MappingJson">Mapping</button>
+<br />
+<table class="w3-table-all w3-tiny">
+    <tr>
+        <th>
+            @*<InputFile OnChange="HandleSelection"></InputFile>*@
+            @*<p>@status</p>*@
+        </th>
+        <th>
+            <textarea class="textbox1" Multiline=true Placeholder="Enter your Code"></textarea>
+        </th>
+    </tr>
+</table>
+
+

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/action/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/action/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.9.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/Users/action/.nuget/packages/" />
+  </ItemGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+  </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.themes/19.2.0.47/buildTransitive/Syncfusion.Blazor.Themes.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.themes/19.2.0.47/buildTransitive/Syncfusion.Blazor.Themes.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.core/19.2.0.47/buildTransitive/Syncfusion.Blazor.Core.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.core/19.2.0.47/buildTransitive/Syncfusion.Blazor.Core.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.spinner/19.2.0.47/buildTransitive/Syncfusion.Blazor.Spinner.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.spinner/19.2.0.47/buildTransitive/Syncfusion.Blazor.Spinner.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.buttons/19.2.0.47/buildTransitive/Syncfusion.Blazor.Buttons.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.buttons/19.2.0.47/buildTransitive/Syncfusion.Blazor.Buttons.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.popups/19.2.0.47/buildTransitive/Syncfusion.Blazor.Popups.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.popups/19.2.0.47/buildTransitive/Syncfusion.Blazor.Popups.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.splitbuttons/19.2.0.47/buildTransitive/Syncfusion.Blazor.SplitButtons.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.splitbuttons/19.2.0.47/buildTransitive/Syncfusion.Blazor.SplitButtons.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.data/19.2.0.47/buildTransitive/Syncfusion.Blazor.Data.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.data/19.2.0.47/buildTransitive/Syncfusion.Blazor.Data.props')" />
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor.inputs/19.2.0.47/buildTransitive/Syncfusion.Blazor.Inputs.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor.inputs/19.2.0.47/buildTransitive/Syncfusion.Blazor.Inputs.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">/Users/action/.nuget/packages/microsoft.aspnetcore.components.webassembly.server/5.0.7</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
+  </PropertyGroup>
+</Project>

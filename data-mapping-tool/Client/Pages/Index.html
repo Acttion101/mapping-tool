@@ -1,0 +1,155 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="Pages/Styles/index.css" rel="stylesheet" />
+    
+</head>
+<style>
+    .textbox {
+        border-radius: 2px;
+        height: 20rem;
+        width: 40rem;
+    }
+
+    .textbox1 {
+        border-radius: 2px;
+        height: 20rem;
+        width: 90rem;
+    }
+
+    .btn-mapping {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        font-size: 20px;
+    }
+    #table-wrapper {
+        position: relative;
+    }
+
+    #table-scroll {
+        height: 150px;
+        overflow: auto;
+        margin-top: 20px;
+    }
+
+    #table-wrapper table {
+        width: 100%;
+    }
+
+        #table-wrapper table * {
+
+            color: black;
+        }
+
+        #table-wrapper table thead th .text {
+            position: absolute;
+            top: -20px;
+            z-index: 2;
+            height: 20px;
+            width: 35%;
+            border: 1px solid red;
+        }
+</style>
+<body>
+    <div id="table-wrapper">
+        <div id="table-scroll">
+            <table class="w3-table-all w3-tiny">
+                <thead>
+                    <tr>
+                        <th>Output[Key]</th>
+                        <th>Output[Value]</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input id="input" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="output" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="description" type="text" Multiline=true Placeholder="Enter your Description" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input id="input1" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="output1" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="description1" type="text" Multiline=true Placeholder="Enter your Description" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input id="input2" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="output2" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="description2" type="text" Multiline=true Placeholder="Enter your Description" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input id="input3" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="output3" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="description3" type="text" Multiline=true Placeholder="Enter your Description" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input id="input4" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="output4" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="description4" type="text" Multiline=true Placeholder="Enter your Description" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input id="input5" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="output5" type="text" Multiline=true Placeholder="Enter your Code" /> </td>
+                        <td><input id="description5" type="text" Multiline=true Placeholder="Enter your Description" /> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button id="btn-mapping" class="btn-mapping">Mapping</button>
+    <br />
+    <table class="w3-table-all w3-tiny">
+        <tr>
+
+            <th>Transformer</th>
+        </tr>
+        <tr>
+            <td> <textarea id="result" class="textbox1" Multiline=true Placeholder="Enter your Code"></textarea></td>
+        </tr>
+
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ramda@latest/dist/ramda.min.js"></script>
+    <script type="text/javascript">function MappingJson() {
+            var body = {
+                Input: document.getElementById("input").value,
+                Output: document.getElementById("output").value
+            }
+            console.log(body)
+
+    axios.post('http://localhost:5000/api/Mapping/tranform', body)
+        .then(function ({ data }) {
+
+            for (let i = 1; i <= 5; i++) {
+                if (document.getElementById(`input${i}`).value) {
+                    data = R.pipe(
+                        R.assocPath(
+                            document.getElementById(`input${i}`).value.split('.'),
+                            document.getElementById(`output${i}`).value))
+                        (data)
+                }
+ 
+            }
+            console.log(data)
+                 document.getElementById('result').value = JSON.stringify(data)
+
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+
+                
+                
+        }   
+
+
+        document.getElementById("btn-mapping").onclick = function () { MappingJson() }</script>
+
+</body>
+
+</html>

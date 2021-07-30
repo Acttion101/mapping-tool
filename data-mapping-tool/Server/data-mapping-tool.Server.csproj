@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>data-mapping-tool.Server</RootNamespace>
+    <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="5.0.7" />
+    <PackageReference Include="JUST.NETCore" Version="2.1.3" />
+    <PackageReference Include="Ramda.NET" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\data-mapping-tool.Client.csproj" />
+    <ProjectReference Include="..\Shared\data-mapping-tool.Shared.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Remove="JUST.NETCore" />
+    <None Remove="Model\" />
+    <None Remove="Ramda.NET" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+</Project>
